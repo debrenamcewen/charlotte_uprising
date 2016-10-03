@@ -9,24 +9,23 @@ body, html {
   width: 100%;
   background-color: #303038;
   color: white;
-  height: 100px;
-  justify-content: center;
+  height: 90px;
+  padding-top: 20px;
 }
 
-.nav-link {
+.nav-link, .nav-text {
   float: right;
   color: #E9E9F3;
   margin-right: 50px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .nav-text {
-  clear: left;
-  margin-right: 50px;
-  font-size: 12px;
-  clear: right;
+
 }
 
 .nav-logo {
@@ -39,5 +38,5 @@ body, html {
 .nav-link:hover {
   border-bottom: 1px solid #E9E9F3;
   font-size: 19px;
-  padding-bottm: 5px
+  padding-bottom: 5px
 }
