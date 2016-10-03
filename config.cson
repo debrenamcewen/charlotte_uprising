@@ -1,0 +1,3 @@
+".source.pug":
+  whitespace:
+    removeTrailingWhitespace: false
