@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p We are so great!!!
+  div.outer-slider
+    a.previous-link(href='#') Previous
+    a.next-link(href='#') Next
+    div.inner-slider
+      img.shown(src= '../images/carousel1.jpg')
+      img.hidden(src= '../images/carousel2.jpg')
+      img.hidden(src= '../images/carousel3.png')
