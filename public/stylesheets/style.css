@@ -1,6 +1,10 @@
-body, html {
-  font: 14px "Lato";
+body, html, h1 {
+  font-family: 14px "Lato";
   margin: 0px;
+}
+
+h1, p {
+  font-family: "Lato";
 }
 
 /* navbar */
@@ -9,11 +13,20 @@ body, html {
   width: 100%;
   background-color: #303038;
   color: white;
-  height: 90px;
+  height: 80px;
   padding-top: 20px;
+  font-family: "Lato";
+
 }
 
-.nav-link, .nav-text {
+/*.navbar @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}*/
+
+.nav-link, .nav-text{
   float: right;
   color: #E9E9F3;
   margin-right: 50px;
@@ -24,19 +37,47 @@ body, html {
   margin-top: 20px;
 }
 
-.nav-text {
+.nav-icon {
+  float: right;
+  color: #E9E9F3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  margin-top: 20px;
+  height: 40px;
+  width: auto;
+  margin-top: 5px;
+  margin-right: 40px;
+}
 
+.nav-icon:hover {
+  height: 45px;
+  width: auto;
+}
+
+
+.nav-text2 {
+  float: right;
+  color: #E9E9F3;
+  margin-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .nav-logo {
   position: relative;
   width: auto;
   height: 70px;
-  margin-left: 20px;
+  margin-left: 40px;
+  margin-top: -5px;
 }
 
 .nav-link:hover {
   border-bottom: 1px solid #E9E9F3;
-  font-size: 19px;
-  padding-bottom: 5px
+  font-size: 16px;
+  padding-bottom: 4px
 }
