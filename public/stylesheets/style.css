@@ -142,3 +142,16 @@ div.inner-slider img {
 .hidden {
   display: none;
 }
+
+/* textbox inner scroll */
+
+.textbox {
+  height: 100px;
+  width: 25%;
+  scrollbar-base-color: black;
+  margin: 20px;
+  outline: 1px black solid;
+  padding: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
