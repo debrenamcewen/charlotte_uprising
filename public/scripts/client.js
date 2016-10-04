@@ -20,14 +20,9 @@ $(document).ready(function(){
 
         nextLinkClicked();
 
-        console.log("this link has been clicked")
-
         e.preventDefault();
 
     });
-
-    console.log("are you getting here??????")
-
 
     function previousLinkClicked(e){
 
@@ -51,14 +46,26 @@ $(document).ready(function(){
 
       previousLinkClicked();
 
-      console.log("this link has been clicked")
-
       e.preventDefault();
 
     });
 
     setInterval(nextLinkClicked, 5000);
 
-      console.log("are you getting here??????")
+    var modal = document.querySelector('.modal');
+
+    var modalLink = document.querySelector('.modal-link');
+
+    modalLink.onclick = function(){
+      modal.style.display = 'block';
+    }
+
+    var closeLink = document.querySelector('.modal-close');
+
+    closeLink.onclick = function(){
+      modal.style.display = 'none';
+    }
+
+
 
 });
