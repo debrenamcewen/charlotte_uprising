@@ -86,7 +86,7 @@ h1, p {
   width: 100%;
   background-color: #303038;
   height: 120px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   text-align: center;
 }
@@ -102,6 +102,44 @@ h1, p {
   height: 90px;
   width: 90px;
   margin: 10px;
+}
+
+/* slider */
 
 
+.inner-slider {
+  display: inline-block;
+  flex-flow: wrap;
+}
+
+.previous-link, .next-link {
+  float: left;
+  margin-top: 120px;
+}
+
+.previous-link {
+  margin-right: 10px;
+}
+
+.next-link {
+  margin-left: 10px;
+}
+
+
+div.inner-slider img {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+  margin-top: 0px;
+  float: left;
+}
+
+.shown {
+  display: inline-block;
+
+}
+
+.hidden {
+  display: none;
 }
