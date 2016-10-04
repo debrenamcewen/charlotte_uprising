@@ -9,9 +9,9 @@ $(document).ready(function(){
       nextImageShown = $(".inner-slider img").first();
     }
 
-    currentImageShown.removeClass(".shown").addClass(".hidden").css("z-index", -10);
+    currentImageShown.removeClass("shown").addClass("hidden").css("z-index", -10);
 
-    nextImageShown.addClass(".shown").removeClass(".hidden").css("z-index", 20);
+    nextImageShown.addClass("shown").removeClass("hidden").css("z-index", 20);
     $(".inner-slider img").not([currentImageShown, nextImageShown]).css("z-index", 1);
 
     }
@@ -39,9 +39,9 @@ $(document).ready(function(){
         nextImageShown = $(".inner-slider img").last();
       }
 
-      currentImageShown.removeClass(".shown").addClass(".hidden").css("z-index", -10);
+      currentImageShown.removeClass("shown").addClass("hidden").css("z-index", -10);
 
-      nextImageShown.addClass(".shown").removeClass(".hidden").css("z-index", 20);
+      nextImageShown.addClass("shown").removeClass("hidden").css("z-index", 20);
 
       $(".inner-slider img").not([currentImageShown, nextImageShown]).css("z-index", 1);
 

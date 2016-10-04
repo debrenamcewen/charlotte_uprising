@@ -126,18 +126,18 @@ h1, p {
 }
 
 
-
-
 div.inner-slider img {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   height: auto;
+  margin-top: 0px;
   float: left;
 }
 
 .shown {
   display: inline-block;
+
 }
 
 .hidden {
