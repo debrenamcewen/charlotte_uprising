@@ -93,12 +93,12 @@ h1, p {
   color: white;
 }
 
-.footerimg{
+/*.footerimg{
   display: inline-block;
   flex-flow: wrap;
   align-content: space-between;
 
-}
+}*/
 
 .footer-text {
   padding: 20%;
@@ -262,10 +262,21 @@ font-size: 30px;
 
 .icon-section {
   text-align: center;
+  display: block;
 }
 
 img.icons {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
+  width: 50%;
+  height: auto;
+
+}
+
+.icons1, .icons2 {
+  display: flex;
+
+}
+
+
+a.icon{
+  width: 30%;
 }
