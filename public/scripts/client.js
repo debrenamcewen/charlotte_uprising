@@ -52,12 +52,16 @@ $(document).ready(function(){
 
     setInterval(nextLinkClicked, 5000);
 
+    var body = document.querySelector('body')
+
     var modal = document.querySelector('.modal');
 
     var modalLink = document.querySelector('.modal-link');
 
     modalLink.onclick = function(){
       modal.style.display = 'block';
+      body.css("background-color", black);
+      // $('body,html').css("background-color", black);
     }
 
     var closeLink = document.querySelector('.modal-close');

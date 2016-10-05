@@ -1,85 +1,98 @@
 extends layout
 
 block content
+  #body.home
+    div.outer-slider
+      a.previous-link(href='#') <
+      a.next-link(href='#') >
+      div.inner-slider
+        img.shown(src= '../images/carousel1.jpg')
+        img.hidden(src= '../images/carousel2.jpg')
+        img.hidden(src= '../images/carousel3.png')
 
-  div.outer-slider
-    a.previous-link(href='#') <
-    a.next-link(href='#') >
-    div.inner-slider
-      img.shown(src= '../images/carousel1.jpg')
-      img.hidden(src= '../images/carousel2.jpg')
-      img.hidden(src= '../images/carousel3.png')
+    div.icon-section
+      .icons1
+        a.modal-link
+          img.icons(src='../images/footerimg1.png')
+          .caption Donate
+            div.modal
+              form.modal-content
+                h2 Donate
+                .close
+                  a.modal-close(href='#') X
+                br
+                label First Name
+                br
+                input.formText(type="text" value="" placeholder="First Name")
+                br
+                label Last Name
+                br
+                input.formText(type="text" value="" placeholder="Last Name")
+                br
+                label Email
+                br
+                input.formText(type="text" value="" placeholder="Email")
+                br
+                label Mobile Phone
+                br
+                input.formText(type="text" value="" placeholder="Mobile Phone")
+                br
+                label Zip Code
+                br
+                input.formText(type="text" value="" placeholder="Zip Code")
+                br
+                label *Organization
+                br
+                input.formText(type="text" value="" placeholder="*Organization")
+                br
+                label Childcare
+                input.checkbox(type="checkbox" name="Childcare")
+                label Organizing
+                input.checkbox(type="checkbox")
+                label Legal
+                input.checkbox(type="checkbox")
+                label Graphic Design
+                input.checkbox(type="checkbox")
+                label Direct Action
+                input.checkbox(type="checkbox")
+                label Organizing
+                input.checkbox(type="checkbox")
+                label Security
+                input.checkbox(type="checkbox")
+                label Medical
+                input.checkbox(type="checkbox")
+                label Policy
+                input.checkbox(type="checkbox")
+                label Logistics
+                input.checkbox(type="checkbox")
+                label Communication
+                input.checkbox(type="checkbox")
+                br
+                label.textmessage Send me text message updates(message data rates may apply)
+                br
+                label Yes
+                input.checkbox(type="radio")
+                label No
+                input.checkbox(type="radio")
+        a.icon(href='#')
+          img.icons(src='../images/footerimg2.png')
+          .caption Sign our petition
+        a.icon(href='')
+          img.icons(src='../images/footerimg3.png')
+          .caption Volunteer
+    div.icon-section
+      .icons2
+        a.icon(href='')
+          img.icons(src='../images/footerimg4.png')
+          .caption Get updates
+        a.icon(href='')
+          img.icons(src='../images/footerimg5.png')
+          .caption Wishlist
+        a.icon(href='')
+          img.icons(src='../images/footerimg6.png')
+          .caption Mental health support
 
-  div.icon-section
-    .icons1
-      a.icon(href='')
-        img.icons(src='../images/footerimg1.png')
-        .caption Donate
-      a.icon(href='')
-        img.icons(src='../images/footerimg2.png')
-        .caption Sign our petition
-      a.icon(href='')
-        img.icons(src='../images/footerimg3.png')
-        .caption Volunteer
-  div.icon-section
-    .icons2
-      a.icon(href='')
-        img.icons(src='../images/footerimg4.png')
-        .caption Get updates
-      a.icon(href='')
-        img.icons(src='../images/footerimg5.png')
-        .caption Wishlist
-      a.icon(href='')
-        img.icons(src='../images/footerimg6.png')
-        .caption Get mental health support
-
-    a.modal-link(href='#') Modal link
-  div.modal
-    a.modal-close(href='#') Close Modal Link
-    form
-      label First Name
-      input(type="text" value="")
-      label Last Name
-      input(type="text" value="")
-      label Email
-      input(type="text" value="")
-      label Mobile Phone
-      input(type="text" value="")
-      label Zip Code
-      input(type="text" value="")
-      label *Organization
-      input(type="text" value="")
-      label Childcare
-      input(type="checkbox" name="Childcare")
-      label Organizing
-      input(type="checkbox")
-      label Legal
-      input(type="checkbox")
-      label Graphic Design
-      input(type="checkbox")
-      label Direct Action
-      input(type="checkbox")
-      label Organizing
-      input(type="checkbox")
-      label Security
-      input(type="checkbox")
-      label Medical
-      input(type="checkbox")
-      label Policy
-      input(type="checkbox")
-      label Logistics
-      input(type="checkbox")
-      label Communication
-      input(type="checkbox")
-      label Send me text message updates(message data rates may apply)
-      label Yes
-      input(type="radio")
-      label No
-      input(type="radio")
-      input(type="submit")
-  #textbox.textbox
-    .inner-textbox
-      h1 This is our textbox
-      p Lorem ipsum dolor sit amet, quaestio perpetua ne usu, sit in purto nonumy persecuti. Nobis feugait atomorum eu eam. Sit at idque graeci, his libris graecis accusam ad. Iusto pertinax sed ut, quis nibh perpetua eu ius, delicata neglegentur qui an. Facer urbanitas ex eam, quo at homero voluptatibus. Est ea incorrupte concludaturque, ex magna habeo comprehensam sea. Ne recusabo conceptam cotidieque mei. Quo ludus verterem et, errem regione delicatissimi no eos, in eos decore facete iracundia. Error nostrud discere ei cum, sea at ipsum tation deleniti. Id nec brute elaboraret percipitur, eu sea fugit sadipscing, sea id posse mandamus. Virtute perfecto maluisset ea vel, duo veri nonumy euismod ea. Graecis fierent sapientem ex nec. No nihil viderer vel, primis timeam admodum usu ne. Ad usu lorem omnium, id pro vitae diceret accusata.
-
-      img(src='../images/carousel3.png')
+    #textbox.textbox
+      .inner-textbox
+        h1 This is our textbox
+        p Lorem ipsum dolor sit amet, quaestio perpetua ne usu, sit in purto nonumy persecuti. Nobis feugait atomorum eu eam. Sit at idque graeci, his libris graecis accusam ad. Iusto pertinax sed ut, quis nibh perpetua eu ius, delicata neglegentur qui an. Facer urbanitas ex eam, quo at homero voluptatibus. Est ea incorrupte concludaturque, ex magna habeo comprehensam sea. Ne recusabo conceptam cotidieque mei. Quo ludus verterem et, errem regione delicatissimi no eos, in eos decore facete iracundia. Error nostrud discere ei cum, sea at ipsum tation deleniti. Id nec brute elaboraret percipitur, eu sea fugit sadipscing, sea id posse mandamus. Virtute perfecto maluisset ea vel, duo veri nonumy euismod ea. Graecis fierent sapientem ex nec. No nihil viderer vel, primis timeam admodum usu ne. Ad usu lorem omnium, id pro vitae diceret accusata.

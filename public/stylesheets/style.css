@@ -144,7 +144,7 @@ a.footer:visited{
 
 .previous-link, .next-link {
   float: left;
-  margin-top: 120px;
+  /*margin-top: 120px;*/
 }
 
 .previous-link {
@@ -159,7 +159,7 @@ div.inner-slider img {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  height: auto;
+  height: 375px;
   margin-top: 0px;
   float: left;
 }
@@ -263,20 +263,110 @@ font-size: 30px;
 .icon-section {
   text-align: center;
   display: block;
+  align-content: flex-start;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
 
 img.icons {
-  width: 50%;
+  width: 80%;
   height: auto;
-
 }
 
 .icons1, .icons2 {
-  display: flex;
 
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
 }
 
 
-a.icon{
+/* add modal-link */
+
+a.icon, a.icon:visited, a.modal-link {
   width: 30%;
+  margin-bottom: 10px;
+  display:inline-block;
+  text-decoration: none;
+  font-family: 'Lato';
+  color:#303038;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-size: 75%;
+}
+
+/*modal*/
+
+.modal {
+  /*display: none;*/
+  z-index: 100;
+  height: inherit;
+  position: absolute;
+  padding-top: 0px;
+  width: 600px;
+}
+
+
+.formText {
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.formCheck {
+  position: absolute;
+  bottom: 10px;
+  margin: 5px;
+}
+
+.close {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+a.modal-close:visited {
+  text-decoration: none;
+}
+
+input.checkbox {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.modal-content a:visited {
+  text-decoration: none;
+}
+
+.modal-content {
+  background-color: white;
+  font-family: "Lato";
+  align-items:center;
+  position: relative;
+  width: 100%;
+  color: #000000;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 12px;
+  text-decoration: none;
+  -webkit-animate-name: animatetop;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatetop;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes animatetop {
+  from { top: -500px; opacity: 0}
+  to {top: 0; opacity:1}
+}
+
+@keyframes animatetop {
+  from{top:-500px; opacity: 0}
+  to {top:0; opacity: 1}
 }
