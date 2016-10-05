@@ -66,6 +66,11 @@ $(document).ready(function(){
       modal.style.display = 'none';
     }
 
-
-
 });
+
+$(function(){
+  $('.burger-button').click(function(event){
+    event.preventDefault()
+      $('.burger-link').slideToggle('fast')
+  })
+})

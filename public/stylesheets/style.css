@@ -28,7 +28,7 @@ h1, p {
 
 .nav-link, .nav-text{
   float: right;
-  color: #E9E9F3;
+  color: red;
   margin-right: 50px;
   text-decoration: none;
   text-transform: uppercase;
@@ -154,4 +154,41 @@ div.inner-slider img {
   padding: 50px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+/* media query to make navbar appear and burger disappear vice versa */
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .burger-link, .burger-menu {
+      display: inline-block;
+      position: absolute;
+    }
+    .nav-link {
+      display: none;
+    }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .burger-link, .burger-menu {
+      display: block;
+    }
+    .nav-link {
+      display: none;
+    }
+}
+@media(min-device-width: 768px){
+  .burger-menu{
+    display: none;
+  }
+}
+
+.burger-bar {
+  border-bottom: 2px solid white;
+  margin-top: 3px;
 }
