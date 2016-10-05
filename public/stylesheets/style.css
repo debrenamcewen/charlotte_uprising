@@ -85,10 +85,12 @@ h1, p {
 .footerbar {
   width: 100%;
   background-color: #303038;
-  height: 120px;
-  position: relative;
+  height: 90px;
   bottom: 0;
   text-align: center;
+  position: static;
+  margin-top: 100%;
+  color: white;
 }
 
 .footerimg{
@@ -98,11 +100,39 @@ h1, p {
 
 }
 
-.footer-icon {
-  height: 120px;
-  width: 120px;
-  margin: 10px;
+.footer-text {
+  padding: 20%;
 }
+
+.footer-links {
+  display: inline-block;
+  padding-top: 35px;
+}
+
+.footer-links2 {
+  display: inline-block;
+  padding-top: 35px;
+}
+
+
+
+a.footer {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: "Lato";
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+a.footer:visited{
+  text-decoration: none;
+}
+
+
+
+
+
 
 /* slider */
 
@@ -158,6 +188,7 @@ div.inner-slider img {
 
 /* media query to make navbar appear and burger disappear vice versa */
 
+/* ipad */
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
@@ -169,7 +200,18 @@ div.inner-slider img {
     .nav-link {
       display: none;
     }
+    .footer-links {
+      display:none;
+
+    }
+    .footer-links2 a.footer {
+      font-size: 32px;
+      margin: 5px;
+    }
+
 }
+
+/* iphone4 */
 
 @media only screen
   and (min-device-width: 320px)
@@ -181,7 +223,18 @@ div.inner-slider img {
     .nav-link {
       display: none;
     }
+
+    .footer-links {
+      display: none;
+    }
+
+    .footer-links2 a.footer {
+      font-size: 32px;
+      margin: 5px;
+    }
 }
+
+
 @media(min-device-width: 768px){
   .burger-menu{
     display: none;
