@@ -99,8 +99,8 @@ h1, p {
 }
 
 .footer-icon {
-  height: 90px;
-  width: 90px;
+  height: 120px;
+  width: 120px;
   margin: 10px;
 }
 
@@ -191,4 +191,28 @@ div.inner-slider img {
 .burger-bar {
   border-bottom: 2px solid white;
   margin-top: 3px;
+}
+
+
+a.previous-link, a.next-link{
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a.previous-link:hover, a.next-link:hover {
+font-size: 30px;
+}
+
+
+/* homepage styling */
+
+
+.icon-section {
+  text-align: center;
+}
+
+img.icons {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
 }
