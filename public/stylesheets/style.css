@@ -11,7 +11,7 @@ h1, p {
 .navbar {
   width: 100%;
   background-color: #303038;
-  color: white;
+  color: #e9e9f3;
   height: 80px;
   padding-top: 20px;
   margin-bottom: 0;
@@ -29,7 +29,7 @@ h1, p {
 
 .nav-link, .nav-text{
   float: right;
-  color: red;
+  color: #e9e9f3;
   margin-right: 50px;
   text-decoration: none;
   text-transform: uppercase;
@@ -139,49 +139,58 @@ form {
 /* slider */
 
 .outer-slider {
-  width: 100%;
-  margin-bottom: 50px;
+  text-align: center;
+  background-image: url('../images/carousel2.jpg');
 }
 
 .inner-slider {
   display: inline-block;
+  padding-left: 150px;
 }
 
 .previous-link{
   float: left;
-  vertical-align: center;
-  margin-left: 20px;
-  bottom: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  left: 10px;
+  top: 350px;
+  z-index: 2;
+  position: absolute;
+  color: black;
 }
-
 
 .next-link {
   float: right;
-  vertical-align: center;
-  margin-right: 20px;
-  bottom: 0;
+  margin-right: 5%;
+  margin-left: 5%;
+  position: absolute;
+  right: 10px;
+  top: 350px;
+  z-index: 2;
+  color: black;
 }
 
-.previous-link {
-  margin-right: 10px;
+.previous {
+  float: left;
 }
 
-.next-link {
-  margin-left: 10px;
+.next {
+  float: right;
 }
 
 div.inner-slider img {
   width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 375px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+/*  max-width: 1200px;
+  min-height: 500px;*/
   margin-top: 0;
   float: left;
 }
 
 .shown {
   display: inline-block;
-
 }
 
 .hidden {
@@ -279,11 +288,13 @@ div.inner-slider img {
 
 a.previous-link, a.next-link{
   text-decoration: none;
-  font-size: 25px;
+  font-size: 75px;
+  color: #e9e9f3;
 }
 
 a.previous-link:hover, a.next-link:hover {
-font-size: 30px;
+  font-size: 80px;
+  color: #e9e9f3;
 }
 
 
