@@ -20,13 +20,6 @@ h1, p {
 
 }
 
-/*.navbar @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}*/
-
 .nav-link {
   float: right;
   color: #e9e9f3;
@@ -79,7 +72,6 @@ h1, p {
   bottom: 0;
   text-align: center;
   position: static;
-  margin-top: 100%;
   color: white;
 }
 
@@ -189,11 +181,17 @@ div.inner-slider img {
   float: left;
 }
 
+.last-half {
+  margin-bottom: 75px;
+}
+
 .demands {
   display: inline-block;
   width: 50%;
   font-family: "Lato";
-  font-size: 20px;
+  font-size: 120%;
+  padding-left: 25px;
+  padding-top: 0;
 }
 
 .demands-text {
@@ -201,6 +199,8 @@ div.inner-slider img {
   width: 100%;
   font-family: "Lato";
   font-size: 75%;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 
@@ -214,6 +214,14 @@ div.inner-slider img {
     .burger-link, .burger-menu {
       display: inline-block;
       position: absolute;
+    }
+
+    a.icon, a.icon:visited, a.modal-link {
+      width: 100%;
+    }
+
+    .info-message {
+      font-size: 10px;
     }
     .nav-link {
       display: none;
@@ -240,6 +248,10 @@ div.inner-slider img {
     }
     .navbar {
       display: none;
+    }
+
+      a.icon, a.icon:visited, a.modal-link {
+      width: 100%;
     }
 
     .footer-links {
@@ -303,7 +315,7 @@ a.previous-link:hover, a.next-link:hover {
 
 .icon-section {
   display: block;
-  align-content: flex-start;
+  flex-flow: nowrap;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -370,14 +382,22 @@ img.icons {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 
 .text {
-  border: 4px white solid;
-  color: #303038;
+  color: white;
+  background-color: #303038;
+  padding: 3px;
+}
+
+.text2 {
+  color: white;
+  background-color: #fffd61;
+  padding: 3px;
+  border-bottom: 3px white solid;
+  border-top: 3px white solid;
 }
 
 .text-message {
@@ -396,29 +416,36 @@ img.icons {
 
 .info-message {
   text-align: center;
-  font-size: 26px;
-  color: #303038;
+  font-size: 24px;
+  color: white;
   text-transform: uppercase;
+  border-bottom: 3px white solid;
+  border-top: 3px white solid;
+  padding: 10px;
+  line-height: 34px;
+  word-spacing: 3px;
 }
 
 
-/* add modal-link */
-
 a.icon, a.icon:visited, a.modal-link {
-  width: 30%;
+  width: 25%;
   margin: 20px;
   display:inline-block;
   text-decoration: none;
   font-family: 'Lato';
-  padding-bottom: 10px;
+  padding: 10px;
   color:#303038;
   text-align: center;
+  align-items: center;
+}
+
+a.icon:hover, a.modal-link:hover {
+  width: 27%;
 }
 
 .caption {
   text-transform: uppercase;
-  font-size: 75%;
-  font-size: 30px;
+  font-size: 80%;
   color: #303038;
 }
 
@@ -446,6 +473,7 @@ a.icon, a.icon:visited, a.modal-link {
   margin-top: 10px;
   width: 90%;
   font-size: 24px;
+  text-align: center;
 }
 
 .formCheck {
@@ -524,5 +552,9 @@ input.checkbox {
 @keyframes animatetop {
   from{opacity: 0}
   to {opacity: 1}
+}
+
+.urgent-news {
+  font-family: "Lato";
 }
 
