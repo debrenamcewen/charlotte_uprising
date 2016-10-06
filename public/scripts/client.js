@@ -52,15 +52,20 @@ $(document).ready(function(){
 
     setInterval(nextLinkClicked, 5000);
 
-    var body = document.querySelector('body')
+    var body = document.querySelector('.home');
 
     var modal = document.querySelector('.modal');
 
     var modalLink = document.querySelector('.modal-link');
 
-    modalLink.onclick = function(){
+    modalLink.onclick = function(e){
       modal.style.display = 'block';
-      body.css("background-color", black);
+      document.getElementsByClassName("outer-slider")[0].style.WebkitFilter='blur(3px)';
+      document.getElementsByClassName("icons2")[0].style.WebkitFilter='blur(3px)';
+      document.getElementsByClassName("last-half")[0].style.WebkitFilter='blur(3px)';
+      e.preventDefault()
+
+      
       // $('body,html').css("background-color", black);
     }
 
@@ -68,6 +73,9 @@ $(document).ready(function(){
 
     closeLink.onclick = function(){
       modal.style.display = 'none';
+      document.getElementsByClassName("outer-slider")[0].style.WebkitFilter='blur(0px)';
+      document.getElementsByClassName("icons2")[0].style.WebkitFilter='blur(0px)';
+      document.getElementsByClassName("last-half")[0].style.WebkitFilter='blur(0px)';
     }
 
 });
