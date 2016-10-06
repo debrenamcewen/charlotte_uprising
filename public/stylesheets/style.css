@@ -71,7 +71,7 @@ h1, p {
   height: 90px;
   bottom: 0;
   text-align: center;
-  position: static;
+  position: relative;
   color: white;
 }
 
@@ -560,9 +560,8 @@ input.checkbox {
 
 .colorblock {
   margin-top: 20px;
-  position: absolute;
+  position: relative;
   height: 200px;
-  background-color: black;
 }
 
 
