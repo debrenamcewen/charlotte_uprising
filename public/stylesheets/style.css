@@ -259,7 +259,7 @@ div.inner-slider img {
     .burger-link, .burger-menu {
       display: block;
     }
-    .nav-link {
+    .navbar {
       display: none;
     }
 
@@ -284,6 +284,23 @@ div.inner-slider img {
   border-bottom: 2px solid white;
   margin-top: 3px;
 }
+
+img.nav-logo-burger {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 200px;
+  height: auto;
+}
+
+.burger-link {
+  font-size: 70px;
+  padding-bottom: 10px;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  padding-right: 15px;
+}
+
 
 
 a.previous-link, a.next-link{
@@ -314,13 +331,51 @@ a.previous-link:hover, a.next-link:hover {
 
 }
 
+.mobile-header {
+  background-color: #303038;
+  width: 100%;
+  height: 120px;
+}
+
+.burger-button {
+  font-size: 50px;
+  color: #e9e9f3;
+  text-decoration: none;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.burger-button:visited {
+  text-decoration: none;
+}
+
+.burger-menu {
+  width: 100%;
+  background-color: #303038; 
+  text-align: right;
+  color: #e9e9f3;
+  font-family: "Lato";
+  text-decoration: none;
+  font-size: 24px;
+  word-spacing: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+a.burger-nav {
+  text-decoration: none;
+  color: #E9E9F3;
+}
+
 img.icons {
   width: 80%;
   height: auto;
 }
 
 .icons1, .icons2 {
-
   margin-right: 10%;
   margin-left: 10%;
   text-align: center;
