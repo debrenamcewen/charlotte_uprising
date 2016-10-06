@@ -179,10 +179,10 @@ div.inner-slider img {
 /* textbox inner scroll */
 
 .textbox {
-  height: 100px;
+  height: 400px;
   width: 25%;
-  margin: 20px;
-  box-shadow: .2px .2px .2px .2px #a1a1b5;
+  margin: 10px;
+  box-shadow: .2px .2px .2px .2px black;
   padding: 50px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -193,14 +193,14 @@ div.inner-slider img {
   display: inline-block;
   width: 50%;
   font-family: "Lato";
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .demands-text {
   display: inline-block;
   width: 100%;
   font-family: "Lato";
-  font-size: 14px;
+  font-size: 75%;
 }
 
 
