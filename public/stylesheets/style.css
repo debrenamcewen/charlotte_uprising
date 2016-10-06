@@ -345,7 +345,7 @@ a.previous-link:hover, a.next-link:hover {
 
 .burger-menu {
   width: 100%;
-  background-color: #303038; 
+  background-color: #303038;
   text-align: right;
   color: #e9e9f3;
   font-family: "Lato";
@@ -554,7 +554,71 @@ input.checkbox {
   to {opacity: 1}
 }
 
+<<<<<<< HEAD
 .urgent-news {
   font-family: "Lato";
 }
 
+=======
+.colorblock {
+  margin-top: 20px;
+  position: absolute;
+  height: 200px;
+  background-color: black;
+}
+
+
+/*content-container adds padding around all contents on page*/
+
+.content-container{
+  padding: 50px;
+}
+
+/*form on petition page*/
+.petition-form {
+  width: 50%;
+  float: right;
+}
+
+/*p.intro styles introduction text inside form*/
+p.intro {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/*textbox on petition page*/
+.pet-textbox {
+  height: 500px;
+  width: 35%;
+  margin: 20px;
+  box-shadow: .2px .2px .2px .2px #a1a1b5;
+  padding: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  float: left;
+  font-size: 14px;
+}
+
+h1, h3 {
+  font-style: "Lato";
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+
+
+
+/*to style font inside textbox*/
+
+.inner-textbox {
+  font-family: "Lato";
+  font-size: 12px;
+
+}
+
+p#standout {
+  font-weight: bold;
+}
+>>>>>>> forms
