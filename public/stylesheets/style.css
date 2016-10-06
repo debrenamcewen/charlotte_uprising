@@ -275,7 +275,7 @@ div.inner-slider img {
 
 
 @media(min-device-width: 768px){
-  .burger-menu{
+  .burger-menu, .mobile-header{
     display: none;
   }
 }
