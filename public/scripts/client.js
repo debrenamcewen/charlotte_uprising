@@ -80,6 +80,6 @@ $(document).ready(function(){
 $(function(){
   $('.burger-button').click(function(event){
     event.preventDefault()
-      $('.burger-link').slideToggle('fast')
+      $('.burger-link').slideToggle('fast');
   })
 })
