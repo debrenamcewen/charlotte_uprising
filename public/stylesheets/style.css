@@ -1,4 +1,4 @@
-body, html, h1 {
+body, html {
   font-family: 14px "Lato";
   margin: 0px;
 }
@@ -6,7 +6,6 @@ body, html, h1 {
 h1, p {
   font-family: "Lato";
 }
-
 /* navbar */
 
 .navbar {
@@ -15,6 +14,8 @@ h1, p {
   color: white;
   height: 80px;
   padding-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-family: "Lato";
 
 }
@@ -47,7 +48,6 @@ h1, p {
   margin-top: 20px;
   height: 40px;
   width: auto;
-  margin-top: 5px;
   margin-right: 40px;
 }
 
@@ -130,21 +130,30 @@ a.footer:visited{
 }
 
 
-
-
-
-
 /* slider */
 
+.outer-slider {
+  width: 100%;
+  margin-bottom: 50px;
+}
 
 .inner-slider {
   display: inline-block;
-  flex-flow: wrap;
 }
 
-.previous-link, .next-link {
+.previous-link{
   float: left;
-  /*margin-top: 120px;*/
+  vertical-align: center;
+  margin-left: 20px;
+  bottom: 0;
+}
+
+
+.next-link {
+  float: right;
+  vertical-align: center;
+  margin-right: 20px;
+  bottom: 0;
 }
 
 .previous-link {
@@ -160,7 +169,7 @@ div.inner-slider img {
   margin-left: 10%;
   margin-right: 10%;
   height: 375px;
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
 }
 
@@ -178,13 +187,21 @@ div.inner-slider img {
 .textbox {
   height: 100px;
   width: 25%;
-  scrollbar-base-color: black;
   margin: 20px;
-  outline: 1px black solid;
+  box-shadow: .2px .2px .2px .2px #a1a1b5;
   padding: 50px;
   overflow-y: auto;
   overflow-x: hidden;
+  float: left;
 }
+
+.demands, .demands-text {
+  display: inline-block;
+  width: 50%;
+  font-family: "Lato";
+  text-align: center;
+}
+
 
 /* media query to make navbar appear and burger disappear vice versa */
 
@@ -259,9 +276,12 @@ font-size: 30px;
 
 /* homepage styling */
 
+#body.home {
+  display: block;
+}
+
 
 .icon-section {
-  text-align: center;
   display: block;
   align-content: flex-start;
   width: 80%;
@@ -302,12 +322,13 @@ a.icon, a.icon:visited, a.modal-link {
 /*modal*/
 
 .modal {
-  /*display: none;*/
+  display: none;
   z-index: 100;
   height: inherit;
   position: absolute;
   padding-top: 0px;
   width: 600px;
+  align-items: center;
 }
 
 
@@ -348,10 +369,10 @@ input.checkbox {
 .modal-content {
   background-color: white;
   font-family: "Lato";
-  align-items:center;
+  align-items: center;
   position: relative;
   width: 100%;
-  color: #000000;
+  color: rgba(233, 233, 243);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-size: 12px;
   text-decoration: none;
@@ -362,11 +383,18 @@ input.checkbox {
 }
 
 @-webkit-keyframes animatetop {
-  from { top: -500px; opacity: 0}
+  from { opacity: 0}
   to {top: 0; opacity:1}
 }
 
 @keyframes animatetop {
-  from{top:-500px; opacity: 0}
+  from{opacity: 0}
   to {top:0; opacity: 1}
+}
+
+.colorblock{
+  margin-top: 20px;
+  position: absolute;
+  height: 200px;
+  background-color: black;
 }
