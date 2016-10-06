@@ -27,7 +27,7 @@ h1, p {
 
 }*/
 
-.nav-link, .nav-text{
+.nav-link {
   float: right;
   color: #e9e9f3;
   margin-right: 50px;
@@ -58,18 +58,6 @@ h1, p {
   width: auto;
 }
 
-
-.nav-text2 {
-  float: right;
-  color: #E9E9F3;
-  margin-right: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 10px;
-  position: relative;
-  margin-top: 20px;
-}
-
 .nav-logo {
   position: relative;
   width: auto;
@@ -81,7 +69,7 @@ h1, p {
 .nav-link:hover {
   border-bottom: 1px solid #E9E9F3;
   font-size: 16px;
-  padding-bottom: 4px
+  padding-bottom: 4px;
 }
 
 .footerbar {
@@ -94,13 +82,6 @@ h1, p {
   margin-top: 100%;
   color: white;
 }
-
-/*.footerimg{
-  display: inline-block;
-  flex-flow: wrap;
-  align-content: space-between;
-
-}*/
 
 .footer-text {
   padding: 20%;
@@ -115,8 +96,6 @@ h1, p {
   display: inline-block;
   padding-top: 35px;
 }
-
-
 
 a.footer {
   margin-right: 15px;
@@ -275,7 +254,7 @@ div.inner-slider img {
 
 
 @media(min-device-width: 768px){
-  .burger-menu{
+  .burger-menu, .mobile-header{
     display: none;
   }
 }
@@ -328,6 +307,7 @@ a.previous-link:hover, a.next-link:hover {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  padding-left: 2.5px;
 
 }
 
@@ -375,10 +355,50 @@ img.icons {
   height: auto;
 }
 
-.icons1, .icons2 {
-  margin-right: 10%;
-  margin-left: 10%;
+/* colorblock with text */
+
+.colorblock {
+  width: 100%;
+  height: auto;
+  background-color: #fffd61;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.colorblock2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.text {
+  border: 4px white solid;
+  color: #303038;
+}
+
+.text-message {
   text-align: center;
+  font-size: 38px;
+  color: #303038;
+  text-transform: uppercase;
+}
+
+.text-message2 {
+  text-align: center;
+  font-size: 16px;
+  color: #303038;
+  text-transform: uppercase;
+}
+
+.info-message {
+  text-align: center;
+  font-size: 26px;
+  color: #303038;
+  text-transform: uppercase;
 }
 
 
@@ -386,23 +406,23 @@ img.icons {
 
 a.icon, a.icon:visited, a.modal-link {
   width: 30%;
-  margin-bottom: 10px;
+  margin: 20px;
   display:inline-block;
   text-decoration: none;
   font-family: 'Lato';
+  padding-bottom: 10px;
   color:#303038;
+  text-align: center;
 }
 
 .caption {
   text-transform: uppercase;
   font-size: 75%;
+  font-size: 30px;
+  color: #303038;
 }
 
 /*modal*/
-
-.icons1 {
-  display: block;
-}
 
 .modal {
   display: none;
@@ -506,9 +526,3 @@ input.checkbox {
   to {opacity: 1}
 }
 
-.colorblock{
-  margin-top: 20px;
-  position: absolute;
-  height: 200px;
-  background-color: black;
-}
