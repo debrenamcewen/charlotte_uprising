@@ -199,11 +199,18 @@ div.inner-slider img {
   float: left;
 }
 
-.demands, .demands-text {
+.demands {
   display: inline-block;
   width: 50%;
   font-family: "Lato";
-  text-align: center;
+  font-size: 14px;
+}
+
+.demands-text {
+  display: inline-block;
+  width: 100%;
+  font-family: "Lato";
+  font-size: 14px;
 }
 
 
@@ -350,6 +357,7 @@ a.icon, a.icon:visited, a.modal-link {
   margin-bottom: 10px;
   margin-top: 10px;
   width: 90%;
+  font-size: 24px;
 }
 
 .formCheck {
@@ -385,7 +393,8 @@ input.checkbox {
 }
 
 .modal-content {
-  background-color: #303038;
+  background-color: hsla(141, 5%, 35%, .9);
+  text-transform: uppercase;
   font-family: "Lato";
   align-items: center;
   position: absolute;
@@ -393,7 +402,7 @@ input.checkbox {
   width: 100%;
   color: #e9e9f3;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  font-size: 12px;
+  font-size: 18px;
   text-decoration: none;
   -webkit-animate-name: animatetop;
   -webkit-animation-duration: 1s;
@@ -401,6 +410,22 @@ input.checkbox {
   animation-duration: 1s;
   z-index: 1000;
   padding: 25px;
+}
+
+.submit-button {
+  width: 50%;
+  height: 40px;
+  background-color: #c45656;
+  border: 2px black solid;
+  font-size: 20px;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color:#c45656;
+  border: 2px white solid;
+  width: 55%;
+
 }
 
 @-webkit-keyframes animatetop {
