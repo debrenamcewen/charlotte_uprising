@@ -1,4 +1,4 @@
-body, html, h1 {
+body, html {
   font-family: 14px "Lato";
   margin: 0px;
 }
@@ -6,7 +6,6 @@ body, html, h1 {
 h1, p {
   font-family: "Lato";
 }
-
 /* navbar */
 
 .navbar {
@@ -15,6 +14,8 @@ h1, p {
   color: white;
   height: 80px;
   padding-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-family: "Lato";
 
 }
@@ -47,7 +48,6 @@ h1, p {
   margin-top: 20px;
   height: 40px;
   width: auto;
-  margin-top: 5px;
   margin-right: 40px;
 }
 
@@ -93,12 +93,12 @@ h1, p {
   color: white;
 }
 
-.footerimg{
+/*.footerimg{
   display: inline-block;
   flex-flow: wrap;
   align-content: space-between;
 
-}
+}*/
 
 .footer-text {
   padding: 20%;
@@ -129,22 +129,35 @@ a.footer:visited{
   text-decoration: none;
 }
 
-
-
-
+form {
+  background-color: #303038;
+}
 
 
 /* slider */
 
+.outer-slider {
+  width: 100%;
+  margin-bottom: 50px;
+}
 
 .inner-slider {
   display: inline-block;
-  flex-flow: wrap;
 }
 
-.previous-link, .next-link {
+.previous-link{
   float: left;
-  margin-top: 120px;
+  vertical-align: center;
+  margin-left: 20px;
+  bottom: 0;
+}
+
+
+.next-link {
+  float: right;
+  vertical-align: center;
+  margin-right: 20px;
+  bottom: 0;
 }
 
 .previous-link {
@@ -159,8 +172,8 @@ div.inner-slider img {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  height: auto;
-  margin-top: 0px;
+  height: 375px;
+  margin-top: 0;
   float: left;
 }
 
@@ -178,13 +191,28 @@ div.inner-slider img {
 .textbox {
   height: 100px;
   width: 25%;
-  scrollbar-base-color: black;
   margin: 20px;
-  outline: 1px black solid;
+  box-shadow: .2px .2px .2px .2px #a1a1b5;
   padding: 50px;
   overflow-y: auto;
   overflow-x: hidden;
+  float: left;
 }
+
+.demands {
+  display: inline-block;
+  width: 50%;
+  font-family: "Lato";
+  font-size: 14px;
+}
+
+.demands-text {
+  display: inline-block;
+  width: 100%;
+  font-family: "Lato";
+  font-size: 14px;
+}
+
 
 /* media query to make navbar appear and burger disappear vice versa */
 
@@ -259,13 +287,160 @@ font-size: 30px;
 
 /* homepage styling */
 
+#body.home {
+  display: block;
+}
+
 
 .icon-section {
-  text-align: center;
+  display: block;
+  align-content: flex-start;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
 
 img.icons {
-  width: 200px;
+  width: 80%;
+  height: auto;
+}
+
+.icons1, .icons2 {
+
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+
+/* add modal-link */
+
+a.icon, a.icon:visited, a.modal-link {
+  width: 30%;
+  margin-bottom: 10px;
+  display:inline-block;
+  text-decoration: none;
+  font-family: 'Lato';
+  color:#303038;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-size: 75%;
+}
+
+/*modal*/
+
+.icons1 {
+  display: block;
+}
+
+.modal {
+  display: none;
+  z-index: 100;
+  height: inherit;
+  position: relative;
+  padding-top: 0px;
+  width: 600px;
+  align-items: center;
+  z-index: 1000;
+  top: 25%;
+  margin: 0 auto;
+  background-color: #303038;
+}
+
+
+.formText {
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 90%;
+  font-size: 24px;
+}
+
+.formCheck {
+  position: absolute;
+  bottom: 10px;
+  margin: 5px;
+}
+
+.close {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+a.modal-close:visited {
+  text-decoration: none;
+  color: #e9e9f3;
+}
+
+a.modal-close {
+  text-decoration: none;
+  color: #e9e9f3;
+}
+
+input.checkbox {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.modal-content a:visited {
+  text-decoration: none;
+}
+
+.modal-content {
+  background-color: hsla(141, 5%, 35%, .9);
+  text-transform: uppercase;
+  font-family: "Lato";
+  align-items: center;
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  color: #e9e9f3;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-animate-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 1s;
+  z-index: 1000;
+  padding: 25px;
+}
+
+.submit-button {
+  width: 50%;
+  height: 40px;
+  background-color: #c45656;
+  border: 2px black solid;
+  font-size: 20px;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color:#c45656;
+  border: 2px white solid;
+  width: 55%;
+
+}
+
+@-webkit-keyframes animatetop {
+  from { opacity: 0}
+  to{opacity:1}
+}
+
+@keyframes animatetop {
+  from{opacity: 0}
+  to {opacity: 1}
+}
+
+.colorblock{
+  margin-top: 20px;
+  position: absolute;
   height: 200px;
-  margin: 10px;
+  background-color: black;
 }

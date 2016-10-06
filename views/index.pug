@@ -1,70 +1,46 @@
 extends layout
 
 block content
+  .home
+    div.outer-slider
+      div.inner-slider
+        img.shown(src= '../images/carousel1.jpg')
+        img.hidden(src= '../images/carousel2.jpg')
+        img.hidden(src= '../images/carousel3.png')
+      a.previous-link(href='#') <
+      a.next-link(href='#') >
 
-  div.outer-slider
-    a.previous-link(href='#') <
-    a.next-link(href='#') >
-    div.inner-slider
-      img.shown(src= '../images/carousel1.jpg')
-      img.hidden(src= '../images/carousel2.jpg')
-      img.hidden(src= '../images/carousel3.png')
   div.icon-section
     .icons1
-      img.icons(src='../images/footerimg1.png')
-      img.icons(src='../images/footerimg2.png')
-      img.icons(src='../images/footerimg3.png')
+      a.modal-link
+        img.icons(src='../images/footerimg1.png')
+        .caption Donate
+      div.modal
+        include form.pug
     .icons2
-      img.icons(src='../images/footerimg4.png')
-      img.icons(src='../images/footerimg5.png')
-      img.icons(src='../images/footerimg6.png')
-    a.modal-link(href='#') Modal link
-  div.modal
-    a.modal-close(href='#') Close Modal Link
-    form
-      label First Name
-      input(type="text" value="")
-      label Last Name
-      input(type="text" value="")
-      label Email
-      input(type="text" value="")
-      label Mobile Phone
-      input(type="text" value="")
-      label Zip Code
-      input(type="text" value="")
-      label *Organization
-      input(type="text" value="")
-      label Childcare
-      input(type="checkbox" name="Childcare")
-      label Organizing
-      input(type="checkbox")
-      label Legal
-      input(type="checkbox")
-      label Graphic Design
-      input(type="checkbox")
-      label Direct Action
-      input(type="checkbox")
-      label Organizing
-      input(type="checkbox")
-      label Security
-      input(type="checkbox")
-      label Medical
-      input(type="checkbox")
-      label Policy
-      input(type="checkbox")
-      label Logistics
-      input(type="checkbox")
-      label Communication
-      input(type="checkbox")
-      label Send me text message updates(message data rates may apply)
-      label Yes
-      input(type="radio")
-      label No
-      input(type="radio")
-      input(type="submit")
-  #textbox.textbox
-    .inner-textbox
-      h1 This is our textbox
-      p Lorem ipsum dolor sit amet, quaestio perpetua ne usu, sit in purto nonumy persecuti. Nobis feugait atomorum eu eam. Sit at idque graeci, his libris graecis accusam ad. Iusto pertinax sed ut, quis nibh perpetua eu ius, delicata neglegentur qui an. Facer urbanitas ex eam, quo at homero voluptatibus. Est ea incorrupte concludaturque, ex magna habeo comprehensam sea. Ne recusabo conceptam cotidieque mei. Quo ludus verterem et, errem regione delicatissimi no eos, in eos decore facete iracundia. Error nostrud discere ei cum, sea at ipsum tation deleniti. Id nec brute elaboraret percipitur, eu sea fugit sadipscing, sea id posse mandamus. Virtute perfecto maluisset ea vel, duo veri nonumy euismod ea. Graecis fierent sapientem ex nec. No nihil viderer vel, primis timeam admodum usu ne. Ad usu lorem omnium, id pro vitae diceret accusata.
-
-      img(src='../images/carousel3.png')
+      a.icon(href='/petition')
+        img.icons(src='../images/footerimg2.png')
+        .caption Sign our petition
+      a.icon(href='/volunteer')
+        img.icons(src='../images/footerimg3.png')
+        .caption Volunteer
+      a.icon(href='/updates')
+        img.icons(src='../images/footerimg4.png')
+        .caption Get updates
+      a.icon(href='/wishlist')
+        img.icons(src='../images/footerimg5.png')
+        .caption Wishlist
+      a.icon(href='/wishlist')
+        img.icons(src='../images/footerimg6.png')
+        .caption Mental health support
+  .last-half
+    #textbox.textbox
+      .inner-textbox
+        h1 NEWS
+        p Lorem ipsum dolor sit amet, quaestio perpetua ne usu, sit in purto nonumy persecuti. Nobis feugait atomorum eu eam. Sit at idque graeci, his libris graecis accusam ad. Iusto pertinax sed ut, quis nibh perpetua eu ius, delicata neglegentur qui an. Facer urbanitas ex eam, quo at homero voluptatibus. Est ea incorrupte concludaturque, ex magna habeo comprehensam sea. Ne recusabo conceptam cotidieque mei. Quo ludus verterem et, errem regione delicatissimi no eos, in eos decore facete iracundia. Error nostrud discere ei cum, sea at ipsum tation deleniti. Id nec brute elaboraret percipitur, eu sea fugit sadipscing, sea id posse mandamus. Virtute perfecto maluisset ea vel, duo veri nonumy euismod ea. Graecis fierent sapientem ex nec. No nihil viderer vel, primis timeam admodum usu ne. Ad usu lorem omnium, id pro vitae diceret accusata.
+    .demands
+      br
+      .demands-text
+        include demands.pug
+      br
+    div.colorblock

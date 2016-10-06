@@ -52,18 +52,27 @@ $(document).ready(function(){
 
     setInterval(nextLinkClicked, 5000);
 
+    var body = document.querySelector('.home');
+
     var modal = document.querySelector('.modal');
 
     var modalLink = document.querySelector('.modal-link');
 
-    modalLink.onclick = function(){
+    modalLink.onclick = function(e){
       modal.style.display = 'block';
+      document.getElementsByClassName("outer-slider")[0].style.WebkitFilter='opacity(10%)';
+      document.getElementsByClassName("icons2")[0].style.WebkitFilter='opacity(10%)';
+      document.getElementsByClassName("last-half")[0].style.WebkitFilter='opacity(10%)';
+      e.preventDefault()
     }
 
     var closeLink = document.querySelector('.modal-close');
 
     closeLink.onclick = function(){
       modal.style.display = 'none';
+      document.getElementsByClassName("outer-slider")[0].style.WebkitFilter='opacity(100%)';
+      document.getElementsByClassName("icons2")[0].style.WebkitFilter='opacity(100%)';
+      document.getElementsByClassName("last-half")[0].style.WebkitFilter='opacity(100%)';
     }
 
 });
