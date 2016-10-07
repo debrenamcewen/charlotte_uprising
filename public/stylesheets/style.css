@@ -1,7 +1,6 @@
 body, html {
   font-family: 14px "Lato";
   margin: 0px;
-  padding-bottom: 180px;
   height: 100%;
 }
 
@@ -76,6 +75,8 @@ h1, p {
   width: 100%;
   background-color: #303038;
   bottom: 0;
+  left: 0;
+  right: 0;
   height: 90px;
   text-align: center;
   color: white;
@@ -83,6 +84,19 @@ h1, p {
 
 .footer-text {
   padding: 20%;
+}
+
+.footerbar2 {
+  height: 100px;
+  width: 100%;
+  background-color:#303038;
+  margin-top: 80%;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  margin-top: 500px;
 }
 
 .footer-links {
@@ -256,8 +270,16 @@ div.inner-slider img {
       display: none;
     }
 
-      a.icon, a.icon:visited, a.modal-link {
+    a.icon, a.icon:visited, a.modal-link {
       width: 100%;
+    }
+
+    .content-container {
+      font-size: 34px;
+    }
+
+    input.formText {
+      font-size: 32px;
     }
 
     .footer-links {
@@ -268,6 +290,38 @@ div.inner-slider img {
       font-size: 32px;
       margin: 5px;
     }
+
+    .topimage{
+      width: 100%;
+    }
+
+    img.headimage, img.headvolunteer {
+      width: 100%;
+      }
+    div.headimage {
+      width: 100%;
+    }
+
+    #textbox.pet-textbox, div.bailfund, div.donateimages {
+
+    }
+    footer {
+      position: static;
+      bottom: 0;
+      width: 100%;
+      margin-top: 103%;
+    }
+
+    div.footerbar2 {
+      position: static;
+      bottom: 0;
+      width: 100%;
+      margin-top: 103%;
+    }
+}
+
+img.headimage {
+  width: 100%;
 }
 
 
@@ -605,13 +659,13 @@ p.intro {
 .pet-textbox {
   height: 500px;
   width: 35%;
-  margin: 20px;
   box-shadow: .2px .2px .2px .2px #a1a1b5;
   padding: 50px;
   overflow-y: auto;
   overflow-x: hidden;
   float: left;
   font-size: 14px;
+  margin-top: 50px;
 }
 
 h1, h3 {
@@ -644,9 +698,9 @@ img.headvolunteer {
 /*to style submit button on the volunteer page form*/
 
 .volunteer-button {
-margin-left: 40%;
-margin-right: 40%;
-margin-bottom: 50px;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 50px;
 }
 
 .wishlist {
@@ -662,24 +716,25 @@ p#smalltype {
   margin-left: 22%;
 }
 
-.donateimages{
-margin: 50px;
-
-}
-
 .donate1pic {
-  float:left;
+  margin: 0;
 }
 
-.donate2pic {
-  float:right;
+img.donateimages {
+  margin-left: 0;
+  width: 90%;
 }
+
+img.donateimages2 {
+  margin: 20px;
+}
+
 .bailfund {
-  width: 35%;
+  width: 50%;
   float: right;
-  margin-right: 50px;
+  text-align: center;
+  margin-top: 5%;
 }
-
 
 .submit-button2 {
   height: 40px;
@@ -696,3 +751,22 @@ margin: 50px;
   border: 2px white solid;
   width: 65%;
 }
+
+.donatepage {
+  margin-bottom: 100px;
+}
+
+.update-submit {
+  padding: 100px;
+}
+
+.update-form {
+  font-family: "lato";
+  padding: 25px;
+}
+
+.topimage {
+  width: 100%;
+}
+
+

@@ -2,167 +2,171 @@ extends layout
 
 block content
 
-  div.headvolunteer
-    img(src='../images/volunteer.png')
+  .donatepage
+    div.headvolunteer
+      img.headvolunteer(src='../images/volunteer.png')
 
-  h1 Defend and Support the #CharlotteUprising
+    #textbox.pet-textbox
+      div.donateimages
+        div.donate1pic
+          img.donateimages(src='../images/donate1.png')
 
-  div.donateimages
-    div.donate1pic
-      img(src='../images/donate1.png')
+      .inner-textbox
+        h2 Donate to the General Support Fund
 
-    div.donate2pic
-      img(src='../images/donate2.png')
+        p On Tuesday, September 20, 2016, Keith Lamont Scott, a disabled Black man, was shot and killed by Charlotte police while he was sitting in his truck reading, waiting for his children to get off the school bus.
 
+        p Charlotte community and organizers took to the streets all night and into the early morning to fight back against the continued police terror that criminalizes and murders Black people.
 
+        p As the situation unfolds, organizers on the ground need support to get materials, supplies, and other needs met to continuing supporting folks as they connect their righteous rage to action.
 
-  #textbox.pet-textbox
+        p All contributions collected on this page will go towards the CLT QTPOC Coalition, a group of organizers who have been taking action for Black Lives, against HB2, for Standing Rock, among other pressing frontline issues.
 
-    .inner-textbox
-      h2 Donate to the General Support Fund
+        p Donations will go towards the following needs:
 
-      p On Tuesday, September 20, 2016, Keith Lamont Scott, a disabled Black man, was shot and killed by Charlotte police while he was sitting in his truck reading, waiting for his children to get off the school bus.
+        ul
+          li banners and signs
+          li an altar at the site of the murder
+          li water
+          li camping supplies
+          li medical supplies
+          li cameras
+          li portable cellphone chargers
 
-      p Charlotte community and organizers took to the streets all night and into the early morning to fight back against the continued police terror that criminalizes and murders Black people.
-
-      p As the situation unfolds, organizers on the ground need support to get materials, supplies, and other needs met to continuing supporting folks as they connect their righteous rage to action.
-
-      p All contributions collected on this page will go towards the CLT QTPOC Coalition, a group of organizers who have been taking action for Black Lives, against HB2, for Standing Rock, among other pressing frontline issues.
-
-      p Donations will go towards the following needs:
-
-      ul
-        li banners and signs
-        li an altar at the site of the murder
-        li water
-        li camping supplies
-        li medical supplies
-        li cameras
-        li portable cellphone chargers
-
-      p Contribution Amount
+        p Contribution Amount
 
 
-      input.checkbox(type="radio")
-      label $10
-      br
+        input.checkbox(type="radio")
+        label $10
+        br
 
 
-      input.checkbox(type="radio")
-      label $20
-      br
+        input.checkbox(type="radio")
+        label $20
+        br
 
-      input.checkbox(type="radio")
-      label $50
-      br
+        input.checkbox(type="radio")
+        label $50
+        br
 
-      input.checkbox(type="radio")
-      label $100
-      br
+        input.checkbox(type="radio")
+        label $100
+        br
 
-      input.checkbox(type="radio")
-      label $500
-      br
-      br
+        input.checkbox(type="radio")
+        label $500
+        br
+        br
 
-      label Other Amount
-      input.formText(type="text" value="")
-      br
+        label Other Amount
+        input.formText(type="text" value="")
+        br
 
-      input.checkbox(type="checkbox" name="Childcare")
-      label I want to contribute every month
-      br
-      br
+        input.checkbox(type="checkbox" name="Childcare")
+        label I want to contribute every month
+        br
+        br
 
 
-      label Email Address*
-      input.formText(type="text" value="")
-      br
-      br
+        label Email Address*
+        input.formText(type="text" value="")
+        br
+        br
 
-      h3 Donor information
+        h3 Donor information
 
-      label First Name
-      br
-      input.formText(type="text" value="" action="get" method="")
-      br
-      label Last Name
-      br
-      input.formText(type="text" value="")
-      br
-      label Email
-      br
-      input.formText(type="text" value="")
-      br
-      label Mobile Phone
-      br
-      input.formText(type="text" value="")
-      br
-      label Street Address
-      input.formText(type="text" value="")
-      br
+        label First Name
+        br
+        input.formText(type="text" value="" action="get" method="")
+        br
+        label Last Name
+        br
+        input.formText(type="text" value="")
+        br
+        label Email
+        br
+        input.formText(type="text" value="")
+        br
+        label Mobile Phone
+        br
+        input.formText(type="text" value="")
+        br
+        label Street Address
+        input.formText(type="text" value="")
+        br
 
-      label State
-      br
-      select
-        option(value='AL') Alabama
-        option(value='AK') Alaska
-        option(value='AZ') Arizona
-        option(value='AR') Arkansas
-        option(value='CA') California
-        option(value='CO') Colorado
-        option(value='CT') Connecticut
-        option(value='DE') Delaware
-        option(value='DC') District Of Columbia
-        option(value='FL') Florida
-        option(value='GA') Georgia
-        option(value='HI') Hawaii
-        option(value='ID') Idaho
-        option(value='IL') Illinois
-        option(value='IN') Indiana
-        option(value='IA') Iowa
-        option(value='KS') Kansas
-        option(value='KY') Kentucky
-        option(value='LA') Louisiana
-        option(value='ME') Maine
-        option(value='MD') Maryland
-        option(value='MA') Massachusetts
-        option(value='MI') Michigan
-        option(value='MN') Minnesota
-        option(value='MS') Mississippi
-        option(value='MO') Missouri
-        option(value='MT') Montana
-        option(value='NE') Nebraska
-        option(value='NV') Nevada
-        option(value='NH') New Hampshire
-        option(value='NJ') New Jersey
-        option(value='NM') New Mexico
-        option(value='NY') New York
-        option(value='NC') North Carolina
-        option(value='ND') North Dakota
-        option(value='OH') Ohio
-        option(value='OK') Oklahoma
-        option(value='OR') Oregon
-        option(value='PA') Pennsylvania
-        option(value='RI') Rhode Island
-        option(value='SC') South Carolina
-        option(value='SD') South Dakota
-        option(value='TN') Tennessee
-        option(value='TX') Texas
-        option(value='UT') Utah
-        option(value='VT') Vermont
-        option(value='VA') Virginia
-        option(value='WA') Washington
-        option(value='WV') West Virginia
-        option(value='WI') Wisconsin
-        option(value='WY') Wyoming
-      br
-      br
-      label Zip code
-      input.formText(type="text" value="")
+        label State
+        br
+        select
+          option(value='AL') Alabama
+          option(value='AK') Alaska
+          option(value='AZ') Arizona
+          option(value='AR') Arkansas
+          option(value='CA') California
+          option(value='CO') Colorado
+          option(value='CT') Connecticut
+          option(value='DE') Delaware
+          option(value='DC') District Of Columbia
+          option(value='FL') Florida
+          option(value='GA') Georgia
+          option(value='HI') Hawaii
+          option(value='ID') Idaho
+          option(value='IL') Illinois
+          option(value='IN') Indiana
+          option(value='IA') Iowa
+          option(value='KS') Kansas
+          option(value='KY') Kentucky
+          option(value='LA') Louisiana
+          option(value='ME') Maine
+          option(value='MD') Maryland
+          option(value='MA') Massachusetts
+          option(value='MI') Michigan
+          option(value='MN') Minnesota
+          option(value='MS') Mississippi
+          option(value='MO') Missouri
+          option(value='MT') Montana
+          option(value='NE') Nebraska
+          option(value='NV') Nevada
+          option(value='NH') New Hampshire
+          option(value='NJ') New Jersey
+          option(value='NM') New Mexico
+          option(value='NY') New York
+          option(value='NC') North Carolina
+          option(value='ND') North Dakota
+          option(value='OH') Ohio
+          option(value='OK') Oklahoma
+          option(value='OR') Oregon
+          option(value='PA') Pennsylvania
+          option(value='RI') Rhode Island
+          option(value='SC') South Carolina
+          option(value='SD') South Dakota
+          option(value='TN') Tennessee
+          option(value='TX') Texas
+          option(value='UT') Utah
+          option(value='VT') Vermont
+          option(value='VA') Virginia
+          option(value='WA') Washington
+          option(value='WV') West Virginia
+          option(value='WI') Wisconsin
+          option(value='WY') Wyoming
+        br
+        br
+        label Zip code
+        input.formText(type="text" value="")
 
-  div.bailfund
-    p You can support by donating to the Freedom Fighter Bond Fund, to help get folks who are arrested home safe, sound, and quick.
+    div.bailfund
+      div.donate2pic
+        img.donateimages2(src='../images/donate2.png')
+      p You can support by donating to the Freedom Fighter Bond Fund, to help get folks who are arrested home safe, sound, and quick.
 
-    a(href="http://durhamsolidaritycenter.org/bondfund/")
-      input.submit-button2(type="submit" value="BAIL SUPPORT FUND")
+      a(href="http://durhamsolidaritycenter.org/bondfund/")
+        input.submit-button2(type="submit" value="BAIL SUPPORT FUND")
+
+block footer 
+  div.footerbar2
+    .footer-links
+      a.footer(href='https://charlotteuprising.com/statement/') Statement
+      a.footer(href='/#textbox') Demands
+      a.footer(href='https://charlotteuprising.com/get-involved/') Get Involved
+    .footer-links2
+      a.footer(href='/donate') Donate
