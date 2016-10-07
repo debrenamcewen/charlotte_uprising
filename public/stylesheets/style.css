@@ -289,10 +289,9 @@ div.inner-slider img {
       width: 100%;
     }
 
-/*    .footerbar {
-      bottom: fixed;
+    #textbox.pet-textbox, div.bailfund, div.donateimages {
+
     }
-*/
     footer {
       position: static;
       bottom: 0;
@@ -636,13 +635,13 @@ p.intro {
 .pet-textbox {
   height: 500px;
   width: 35%;
-  margin: 20px;
   box-shadow: .2px .2px .2px .2px #a1a1b5;
   padding: 50px;
   overflow-y: auto;
   overflow-x: hidden;
   float: left;
   font-size: 14px;
+  margin-top: 50px;
 }
 
 h1, h3 {
@@ -675,9 +674,9 @@ img.headvolunteer {
 /*to style submit button on the volunteer page form*/
 
 .volunteer-button {
-margin-left: 40%;
-margin-right: 40%;
-margin-bottom: 50px;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 50px;
 }
 
 .wishlist {
@@ -693,24 +692,25 @@ p#smalltype {
   margin-left: 22%;
 }
 
-.donateimages{
-margin: 50px;
-
-}
-
 .donate1pic {
-  float:left;
+  margin: 0;
 }
 
-.donate2pic {
-  float:right;
+img.donateimages {
+  margin-left: 0;
+  width: 90%;
 }
+
+img.donateimages2 {
+  margin: 20px;
+}
+
 .bailfund {
-  width: 35%;
+  width: 50%;
   float: right;
-  margin-right: 50px;
+  text-align: center;
+  margin-top: 5%;
 }
-
 
 .submit-button2 {
   height: 40px;
