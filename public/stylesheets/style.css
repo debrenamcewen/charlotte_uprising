@@ -618,7 +618,16 @@ h1, h3 {
 p#standout {
   font-weight: bold;
 }
+
 .wishlist {
   margin-left: 50px;
   font-family: 'Lato';
+}
+
+p#smalltype {
+  font-size: 8px;
+}
+
+.submit-button{
+  margin-left: 22%;
 }
