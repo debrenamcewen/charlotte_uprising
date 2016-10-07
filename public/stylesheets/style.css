@@ -1,6 +1,13 @@
 body, html {
   font-family: 14px "Lato";
   margin: 0px;
+  padding-bottom: 180px;
+  height: 100%;
+}
+
+body:after{
+  content: "";
+  display: block;
 }
 
 h1, p {
@@ -68,10 +75,9 @@ h1, p {
 .footerbar {
   width: 100%;
   background-color: #303038;
-  height: 90px;
   bottom: 0;
+  height: 90px;
   text-align: center;
-  position: relative;
   color: white;
 }
 
