@@ -4,7 +4,7 @@ body, html {
   height: 100%;
 }
 
-body:after{
+body:after {
   content: "";
   display: block;
 }
@@ -12,7 +12,6 @@ body:after{
 h1, p {
   font-family: "Lato";
 }
-/* navbar */
 
 .navbar {
   width: 100%;
@@ -23,7 +22,6 @@ h1, p {
   margin-bottom: 0;
   padding-bottom: 0;
   font-family: "Lato";
-
 }
 
 .nav-link {
@@ -118,16 +116,13 @@ a.footer {
   font-size: 14px;
 }
 
-a.footer:visited{
+a.footer:visited {
   text-decoration: none;
 }
 
 form {
   background-color: #303038;
 }
-
-
-/* slider */
 
 .outer-slider {
   text-align: center;
@@ -139,7 +134,7 @@ form {
   padding-left: 150px;
 }
 
-.previous-link{
+.previous-link {
   float: left;
   margin-left: 5%;
   margin-right: 5%;
@@ -174,8 +169,6 @@ div.inner-slider img {
   margin-left: 5%;
   margin-right: 5%;
   height: auto;
-/*  max-width: 1200px;
-  min-height: 500px;*/
   margin-top: 0;
   float: left;
 }
@@ -187,8 +180,6 @@ div.inner-slider img {
 .hidden {
   display: none;
 }
-
-/* textbox inner scroll */
 
 .textbox {
   height: 400px;
@@ -223,105 +214,96 @@ div.inner-slider img {
   margin-top: 0;
 }
 
-
-/* media query to make navbar appear and burger disappear vice versa */
-
-/* ipad */
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    .burger-link, .burger-menu {
-      display: inline-block;
-      position: absolute;
-    }
+  .burger-link, .burger-menu {
+    display: inline-block;
+    position: absolute;
+  }
 
-    a.icon, a.icon:visited, a.modal-link {
-      width: 100%;
-    }
+  a.icon, a.icon:visited, a.modal-link {
+    width: 100%;
+  }
 
-    .info-message {
-      font-size: 10px;
-    }
-    .nav-link {
-      display: none;
-    }
-    .footer-links {
-      display:none;
+  .info-message {
+    font-size: 10px;
+  }
+  .nav-link {
+    display: none;
+  }
+  .footer-links {
+    display:none;
 
-    }
-    .footer-links2 a.footer {
-      font-size: 32px;
-      margin: 5px;
-    }
-
+  }
+  .footer-links2 a.footer {
+    font-size: 32px;
+    margin: 5px;
+  }
 }
-
-/* iphone4 */
 
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .burger-link, .burger-menu {
-      display: block;
-    }
-    .navbar {
-      display: none;
-    }
+  .burger-link, .burger-menu {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
 
-    a.icon, a.icon:visited, a.modal-link {
-      width: 100%;
-    }
+  a.icon, a.icon:visited, a.modal-link {
+    width: 100%;
+  }
 
-    .content-container {
-      font-size: 34px;
-    }
+  .content-container {
+    font-size: 34px;
+  }
 
-    input.formText {
-      font-size: 32px;
-    }
+  input.formText {
+    font-size: 32px;
+  }
 
-    .footer-links {
-      display: none;
-    }
+  .footer-links {
+    display: none;
+  }
 
-    .footer-links2 a.footer {
-      font-size: 32px;
-      margin: 5px;
-    }
+  .footer-links2 a.footer {
+    font-size: 32px;
+    margin: 5px;
+  }
 
-    .topimage{
-      width: 100%;
-    }
+  .topimage{
+    width: 100%;
+  }
 
-    img.headimage, img.headvolunteer {
-      width: 100%;
-      }
-    div.headimage {
-      width: 100%;
-    }
+  img.headimage, img.headvolunteer {
+    width: 100%;
+  }
+  
+  div.headimage {
+    width: 100%;
+  }
 
-    #textbox.pet-textbox, div.bailfund, div.donateimages {
+  footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 103%;
+  }
 
-    }
-    footer {
-      position: static;
-      bottom: 0;
-      width: 100%;
-      margin-top: 103%;
-    }
-
-    div.footerbar2 {
-      position: static;
-      bottom: 0;
-      width: 100%;
-      margin-top: 103%;
-    }
+  div.footerbar2 {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 103%;
+  }
 }
 
 img.headimage {
-  width: 100%;
+    width: 100%;
 }
 
 
@@ -365,13 +347,9 @@ a.previous-link:hover, a.next-link:hover {
   color: #e9e9f3;
 }
 
-
-/* homepage styling */
-
 #body.home {
   display: block;
 }
-
 
 .icon-section {
   display: block;
@@ -380,7 +358,6 @@ a.previous-link:hover, a.next-link:hover {
   margin-left: 10%;
   margin-right: 10%;
   padding-left: 2.5px;
-
 }
 
 .mobile-header {
@@ -427,8 +404,6 @@ img.icons {
   height: auto;
 }
 
-/* colorblock with text */
-
 .colorblock {
   width: 100%;
   height: auto;
@@ -444,7 +419,6 @@ img.icons {
   margin-bottom: 50px;
   padding-bottom: 5px;
 }
-
 
 .text {
   color: white;
@@ -486,7 +460,6 @@ img.icons {
   word-spacing: 3px;
 }
 
-
 a.icon, a.icon:visited, a.modal-link {
   width: 25%;
   margin: 20px;
@@ -509,8 +482,6 @@ a.icon:hover, a.modal-link:hover {
   color: #303038;
 }
 
-/*modal*/
-
 .modal {
   display: none;
   z-index: 100;
@@ -524,7 +495,6 @@ a.icon:hover, a.modal-link:hover {
   margin: 0 auto;
   background-color: #303038;
 }
-
 
 .formText {
   margin-right: 2px;
@@ -624,10 +594,7 @@ input.checkbox {
   height: 200px;
 }
 
-
-/*content-container adds padding around all contents on page*/
-
-.content-container{
+.content-container {
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
@@ -636,10 +603,10 @@ input.checkbox {
   text-align: center;
 }
 
-/*form container on petition page*/
 .petition-form {
   width: 50%;
   float: right;
+  font-family: "Lato";
 }
 
 .volunteer-button {
@@ -648,14 +615,12 @@ input.checkbox {
   margin-top: 15px;
 }
 
-/*p.intro styles introduction text inside forms*/
 p.intro {
   font-style: italic;
   font-size: 14px;
   line-height: 28px;
 }
 
-/*textbox on petition page*/
 .pet-textbox {
   height: 500px;
   width: 35%;
@@ -675,27 +640,18 @@ h1, h3 {
 
 }
 
-/*to style font inside textbox on petition page*/
-
 .inner-textbox {
   font-family: "Lato";
   font-size: 12px;
-
 }
 
 p#standout {
   font-weight: bold;
 }
 
-
-/*to style header image on volunteer page*/
-
 img.headvolunteer {
   width: 100%;
 }
-
-
-/*to style submit button on the volunteer page form*/
 
 .volunteer-button {
   margin-left: 40%;
@@ -712,7 +668,7 @@ p#smalltype {
   font-size: 8px;
 }
 
-.submit-button{
+.submit-button {
   margin-left: 22%;
 }
 

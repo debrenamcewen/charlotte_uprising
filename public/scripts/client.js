@@ -77,9 +77,14 @@ $(document).ready(function(){
 
 });
 
-$(function(){
-  $('.burger-button').click(function(event){
-    event.preventDefault()
-      $('.burger-link').slideToggle('fast');
-  })
+  $(function(){
+
+    $('.burger-button').click(function(event){
+
+      event.preventDefault()
+
+        $('.burger-link').slideToggle('fast');
+
+    })
+    
 })
