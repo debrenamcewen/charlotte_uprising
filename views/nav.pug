@@ -4,9 +4,12 @@ nav
     a.burger-button(href='#') ☰
     
   div.navbar
-    img.nav-logo(src='../images/logo.png')
-    img.nav-icon(src='../images/facebook-icon.png')
-    img.nav-icon(src='../images/twitter-icon.png')
+    a.logo(href='/')
+      img.nav-logo(src='../images/logo.png')
+    a.logo-icon(href='https://www.facebook.com/charlotteuprising')
+      img.nav-icon(src='../images/facebook-icon.png')
+    a.logo-icon(href='https://twitter.com/cltuprising')
+      img.nav-icon(src='../images/twitter-icon.png')
     a.nav-link(href='/') Home
     a.nav-link(href='/volunteer') Volunteer
     a.nav-link(href='/donate') Donate
