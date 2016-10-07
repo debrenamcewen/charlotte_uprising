@@ -36,9 +36,9 @@ As you work on this goal, consider these questions:
 ---
 ## Quality
 
-- [ ] Code is well formatted without any linting errors
-- [ ] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function)
-- [ ] Code is well organized into a meaningful file structure
+- [x] Code is well formatted without any linting errors
+- [x] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function)
+- [x] Code is well organized into a meaningful file structure
 
 
 <!-- LICENSE -->
