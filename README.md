@@ -25,12 +25,12 @@ As you work on this goal, consider these questions:
 
 ## Specifications
 
-- [ ] Site has at least 3 pages.
-- [ ] Site is _not_ published on the web\*.
-- [ ] All links work correctly (i.e. no broken links).
-- [ ] All images and other external resources load correctly.
-- [ ] External resources used are properly cited.
-- [ ] Mobile responsive.
+- [x] Site has at least 3 pages.
+- [x] Site is _not_ published on the web\*.
+- [x] All links work correctly (i.e. no broken links).
+- [x] All images and other external resources load correctly.
+- [x] External resources used are properly cited.
+- [x] Mobile responsive.
 - [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
