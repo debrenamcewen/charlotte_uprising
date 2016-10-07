@@ -94,7 +94,7 @@ h1, p {
 }
 
 footer {
-  margin-top: 500px;
+  margin-top: 275px;
 }
 
 .footer-links {
@@ -291,7 +291,7 @@ div.inner-slider img {
     position: static;
     bottom: 0;
     width: 100%;
-    margin-top: 103%;
+    margin-top: 25%;
   }
 
   div.footerbar2 {
