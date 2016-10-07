@@ -1,7 +1,6 @@
 body, html {
   font-family: 14px "Lato";
   margin: 0px;
-  padding-bottom: 180px;
   height: 100%;
 }
 
@@ -76,6 +75,8 @@ h1, p {
   width: 100%;
   background-color: #303038;
   bottom: 0;
+  left: 0;
+  right: 0;
   height: 90px;
   text-align: center;
   color: white;
@@ -256,8 +257,16 @@ div.inner-slider img {
       display: none;
     }
 
-      a.icon, a.icon:visited, a.modal-link {
+    a.icon, a.icon:visited, a.modal-link {
       width: 100%;
+    }
+
+    .content-container {
+      font-size: 34px;
+    }
+
+    input.formText {
+      font-size: 32px;
     }
 
     .footer-links {
@@ -267,6 +276,28 @@ div.inner-slider img {
     .footer-links2 a.footer {
       font-size: 32px;
       margin: 5px;
+    }
+
+    .topimage{
+      width: 100%;
+    }
+
+    img.headimage, img.headvolunteer {
+      width: 100%;
+      }
+    div.headimage {
+      width: 100%;
+    }
+
+/*    .footerbar {
+      bottom: fixed;
+    }
+*/
+    footer {
+      position: static;
+      bottom: 0;
+      width: 100%;
+      margin-top: 103%;
     }
 }
 
@@ -696,3 +727,17 @@ margin: 50px;
   border: 2px white solid;
   width: 65%;
 }
+
+.donatepage {
+  margin-bottom: 100px;
+}
+
+.update-submit {
+  padding: 100px;
+}
+
+.update-form {
+  font-family: "lato";
+  padding: 25px;
+}
+
