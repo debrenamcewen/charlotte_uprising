@@ -86,6 +86,19 @@ h1, p {
   padding: 20%;
 }
 
+.footerbar2 {
+  height: 100px;
+  width: 100%;
+  background-color:#303038;
+  margin-top: 80%;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  margin-top: 500px;
+}
+
 .footer-links {
   display: inline-block;
   padding-top: 35px;
@@ -298,6 +311,17 @@ div.inner-slider img {
       width: 100%;
       margin-top: 103%;
     }
+
+    div.footerbar2 {
+      position: static;
+      bottom: 0;
+      width: 100%;
+      margin-top: 103%;
+    }
+}
+
+img.headimage {
+  width: 100%;
 }
 
 
@@ -740,4 +764,9 @@ img.donateimages2 {
   font-family: "lato";
   padding: 25px;
 }
+
+.topimage {
+  width: 100%;
+}
+
 
