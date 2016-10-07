@@ -568,13 +568,24 @@ input.checkbox {
 /*content-container adds padding around all contents on page*/
 
 .content-container{
-  padding: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+  font-family: "lato";
+  text-align: center;
 }
 
 /*form container on petition page*/
 .petition-form {
   width: 50%;
   float: right;
+}
+
+.volunteer-button {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 15px;
 }
 
 /*p.intro styles introduction text inside forms*/
@@ -632,9 +643,10 @@ div.topimage img {
 
 /*to style header image on volunteer page*/
 
-.headvolunteer img {
+img.headvolunteer {
   width: 100%;
 }
+
 
 /*to style submit button on the volunteer page form*/
 
