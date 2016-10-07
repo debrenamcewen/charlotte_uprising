@@ -300,6 +300,14 @@ div.inner-slider img {
     width: 100%;
     margin-top: 103%;
   }
+
+  .previous-link {
+    display: none;
+}
+
+  .next-link {
+    display: none;
+  } 
 }
 
 img.headimage {
