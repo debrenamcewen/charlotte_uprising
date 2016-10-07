@@ -19,9 +19,14 @@ block content
         .caption Donate
       div.modal
         include form.pug
-      for icon in icons 
-        a.icon(href='/petition')
-          img.icons(src=icon)
+      mixin iconsection(imageUrl, url)
+        a.icon(href=url)
+          img.icons(src=imageUrl)
+      +iconsection("/images/footerimg2.png", "/petition")
+      +iconsection("/images/footerimg3.png", "/volunteer")
+      +iconsection("/images/footerimg4.png", "/updates")
+      +iconsection("/images/footerimg5.png", "/wishlist")
+      +iconsection("/images/footerimg6.png", "https://docs.google.com/forms/d/e/1FAIpQLSca0JsQng7oDb820Bvhv4ORy5a4hd7Uxbg2tsTycfaFP5EDMA/viewform?c=0&w=1")
   .colorblock
     .text2
       p.text-message TEXT CHARLIT TO 91990 FOR MOBILE UPDATES
