@@ -616,6 +616,19 @@ p#standout {
   font-weight: bold;
 }
 
+.update-form {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.update-submit {
+  margin-left: 35%;
+  margin-right: 25%;
+  margin-bottom: 50px;
+}
+
+div.topimage img {
+  width: 100%;
+
 
 /*to style header image on volunteer page*/
 

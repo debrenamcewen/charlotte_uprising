@@ -1,4 +1,42 @@
 extends layout
 
 block content
-  h1 Updates on Movement Page
+
+  div.topimage
+    img(src='../images/footer_bg.png')
+  h1 STAY UPDATED
+
+  div.update-form
+    label First Name
+    br
+    input.formText(type="text" value="" action="get" method="")
+    br
+    label Last Name
+    br
+    input.formText(type="text" value="")
+    br
+    label Email
+    br
+    input.formText(type="text" value="")
+    br
+    label Mobile Phone
+    br
+    input.formText(type="text" value="")
+    br
+    label Zip Code
+    br
+    input.formText(type="text" value="")
+    br
+
+
+
+    label.textmessage Send me text message updates(message data rates may apply) 
+
+    label Yes
+    input.checkbox(type="radio")
+    label No
+    input.checkbox(type="radio")
+    br
+
+  div.update-submit
+    input.submit-button(type="submit" value="SUBMIT")
