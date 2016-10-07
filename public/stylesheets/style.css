@@ -618,4 +618,11 @@ h1, h3 {
 p#standout {
   font-weight: bold;
 }
->>>>>>> forms
+
+p#smalltype {
+  font-size: 8px;
+}
+
+.submit-button{
+  margin-left: 22%;
+}
