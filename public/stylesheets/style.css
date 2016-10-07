@@ -571,13 +571,13 @@ input.checkbox {
   padding: 50px;
 }
 
-/*form on petition page*/
+/*form container on petition page*/
 .petition-form {
   width: 50%;
   float: right;
 }
 
-/*p.intro styles introduction text inside form*/
+/*p.intro styles introduction text inside forms*/
 p.intro {
   font-style: italic;
   font-size: 14px;
@@ -604,10 +604,7 @@ h1, h3 {
 
 }
 
-
-
-
-/*to style font inside textbox*/
+/*to style font inside textbox on petition page*/
 
 .inner-textbox {
   font-family: "Lato";
@@ -617,6 +614,21 @@ h1, h3 {
 
 p#standout {
   font-weight: bold;
+}
+
+
+/*to style header image on volunteer page*/
+
+.headvolunteer img {
+  width: 100%;
+}
+
+/*to style submit button on the volunteer page form*/
+
+.volunteer-button {
+margin-left: 40%;
+margin-right: 40%;
+margin-bottom: 50px;
 }
 
 .wishlist {
