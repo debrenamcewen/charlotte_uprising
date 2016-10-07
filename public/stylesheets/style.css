@@ -618,4 +618,7 @@ h1, h3 {
 p#standout {
   font-weight: bold;
 }
->>>>>>> forms
+.wishlist {
+  margin-left: 50px;
+  font-family: 'Lato';
+}
