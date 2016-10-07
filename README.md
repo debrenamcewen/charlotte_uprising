@@ -40,7 +40,9 @@ As you work on this goal, consider these questions:
 - [x] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function)
 - [x] Code is well organized into a meaningful file structure
 
+## Stretch Specs
 
+- Complete Redesign 
 <!-- LICENSE -->
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
