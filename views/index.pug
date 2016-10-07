@@ -19,21 +19,9 @@ block content
         .caption Donate
       div.modal
         include form.pug
-      a.icon(href='/petition')
-        img.icons(src='../images/footerimg2.png')
-        .caption Sign our petition
-      a.icon(href='/volunteer')
-        img.icons(src='../images/footerimg3.png')
-        .caption Volunteer
-      a.icon(href='/updates')
-        img.icons(src='../images/footerimg4.png')
-        .caption Get updates
-      a.icon(href='/wishlist')
-        img.icons(src='../images/footerimg5.png')
-        .caption Wishlist
-      a.icon(href='https://docs.google.com/forms/d/e/1FAIpQLSca0JsQng7oDb820Bvhv4ORy5a4hd7Uxbg2tsTycfaFP5EDMA/viewform?c=0&w=1')
-        img.icons(src='../images/footerimg6.png')
-        .caption Mental health support
+      for icon in icons 
+        a.icon(href='/petition')
+          img.icons(src=icon)
   .colorblock
     .text2
       p.text-message TEXT CHARLIT TO 91990 FOR MOBILE UPDATES
