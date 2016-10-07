@@ -633,19 +633,6 @@ p#standout {
   font-weight: bold;
 }
 
-.update-form {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-.update-submit {
-  margin-left: 35%;
-  margin-right: 25%;
-  margin-bottom: 50px;
-}
-
-div.topimage img {
-  width: 100%;
-
 
 /*to style header image on volunteer page*/
 
@@ -673,4 +660,39 @@ p#smalltype {
 
 .submit-button{
   margin-left: 22%;
+}
+
+.donateimages{
+margin: 50px;
+
+}
+
+.donate1pic {
+  float:left;
+}
+
+.donate2pic {
+  float:right;
+}
+.bailfund {
+  width: 35%;
+  float: right;
+  margin-right: 50px;
+}
+
+
+.submit-button2 {
+  height: 40px;
+  background-color: #c45656;
+  border: 2px black solid;
+  font-size: 20px;
+  color: white;
+  width: 57%;
+  margin-left: 20%;
+}
+
+.submit-button2:hover {
+  background-color:#c45656;
+  border: 2px white solid;
+  width: 65%;
 }
